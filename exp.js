@@ -91,12 +91,14 @@ const data2=
 
 const data_json = JSON.stringify(data2)
 
+const llave = { key: "clave_secreta333"}
+const data_llave = JSON.stringify(llave)
 
 
-app.get("/character/:id",(req,res)=>{
+app.get("/llave/:id",(req,res)=>{
     
     console.log("respuesta");
-    res.send(data_json)
+    res.send(data_llave)
 })
 
 
